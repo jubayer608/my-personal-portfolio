@@ -22,21 +22,23 @@ export default function Contact() {
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">
             Get In Touch
           </h1>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
             <a
               href="https://wa.me/8801784355059"
               target="_blank"
-              className="px-4 py-2 rounded-md border border-accent/40 text-accent hover:bg-accent/10 transition-colors"
+              className="w-full sm:w-auto text-center px-4 py-2 rounded-md border border-accent/40 text-accent hover:bg-accent/10 transition-colors"
               aria-label="WhatsApp contact"
             >
-              📱 WhatsApp: <span className="font-medium ml-1">+8801784355059</span>
+              📱 WhatsApp:{" "}
+              <span className="font-medium ml-1">+8801784355059</span>
             </a>
             <a
               href="mailto:jubaihasan88@gmail.com"
-              className="px-4 py-2 rounded-md border border-accent/40 text-accent hover:bg-accent/10 transition-colors"
+              className="w-full sm:w-auto text-center px-4 py-2 rounded-md border border-accent/40 text-accent hover:bg-accent/10 transition-colors"
               aria-label="Email contact"
             >
-              ✉️ Email: <span className="font-medium ml-1">jubaihasan88@gmail.com</span>
+              ✉️ Email:{" "}
+              <span className="font-medium ml-1">jubaihasan88@gmail.com</span>
             </a>
           </div>
         </div>

@@ -7,6 +7,7 @@ import { FileAxis3dIcon, Github, GithubIcon, X } from "lucide-react";
 import img1 from "../../public/garden.png";
 import img2 from "../../public/artifacts.png";
 import img3 from "../../public/taskCoin.png";
+import img4 from "../../public/bill.png";
 
 // Project data
 const projects = [
@@ -23,8 +24,8 @@ const projects = [
 - MERN stack
 - Responsive UI`,
     live: "https://my-garden-app-e56e9.web.app",
-    client: "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-jubayer608.git",
-    server: "https://github.com/Programming-Hero-Web-Course4/b11a10-server-side-jubayer608.git",
+    client: "https://github.com/jubayer608/gardening-community-client-a10.git",
+    server: "https://github.com/jubayer608/gardening-community-server-a10.git",
     technologies: ["React", "Tailwind", "MongoDB", "Express.js", "Firebase"],
   },
   {
@@ -40,10 +41,29 @@ const projects = [
 - React + Next.js + MongoDB + Express.js
 - Responsive UI`,
     live: "https://artifacts-tracker-472eb.web.app",
-    client: "https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-jubayer608.git",
-    server: "https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-jubayer608.git",
+    client: "https://github.com/jubayer608/artifacts-tracker-client-a11.git",
+    server: "https://github.com/jubayer608/artifacts-tracker-server-a11.git",
     technologies: ["React", "Next.js", "MongoDB", "Express.js", "JWT"],
   },
+  {
+  title: "Bill Management Website (React Authentication)",
+  image: img4, 
+  description:
+    "A React-based authentication system project where users can register, log in, and securely manage their account access.",
+  fullDetails: `Full project details from README.md:
+- User registration and login system
+- Email & password-based authentication
+- Firebase Authentication integration
+- Protected/private routes access
+- Error handling and form validation
+- Logout functionality with session control
+  `,
+  live: "https://bill-management-website-a4c68.web.app",
+  client: "https://github.com/programming-hero-web-course1/b11a9-react-authentication-jubayer608.git",
+  server: null, 
+  technologies: ["React", "Tailwind", "Firebase Auth", "React Router", "JavaScript"],
+},
+
   {
     title: "Task Coin (Micro Task Platform)",
     image: img3,
@@ -130,7 +150,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projects" className="py-20 px-6 md:px-10 text-foreground">
+    <section id="projects" className="py-20 px-6 custom-bg md:px-10 text-foreground">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-accent mb-4">My Projects</h2>
         <p className="text-base sm:text-lg text-foreground/80">
