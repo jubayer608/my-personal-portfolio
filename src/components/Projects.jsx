@@ -59,7 +59,7 @@ const projects = [
 - Logout functionality with session control
   `,
   live: "https://bill-management-website-a4c68.web.app",
-  client: "https://github.com/programming-hero-web-course1/b11a9-react-authentication-jubayer608.git",
+  client: "https://github.com/jubayer608/bill-management-website-a9.git",
   server: null, 
   technologies: ["React", "Tailwind", "Firebase Auth", "React Router", "JavaScript"],
 },
