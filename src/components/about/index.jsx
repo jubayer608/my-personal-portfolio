@@ -2,6 +2,20 @@ import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
 
+
+const certificates = [
+  {
+    title: "Complete Web Development Course",
+    platform: "Programming Hero",
+    image: "/ph.png", 
+  },
+  {
+    title: "JavaScript Fundamentals",
+    platform: "FreeCodeCamp",
+    image: "/certificates/js-cert.jpg",
+  },
+];
+
 const AboutDetails = () => {
   return (
     <section className="py-20 w-full">
@@ -184,6 +198,36 @@ const AboutDetails = () => {
               </div>
               <p className="mt-2 text-foreground/70 text-sm">Strong base in Mathematics and General Science; active in co‑curriculars.</p>
             </div>
+          </div>
+        </ItemLayout>
+
+         {/* === Certifications Section === */}
+        <ItemLayout className={"col-span-full"}>
+          <h2 className="text-xl md:text-2xl w-full text-accent capitalize text-center">
+            Certifications & Achievements
+          </h2>
+        </ItemLayout>
+
+        <ItemLayout className={"col-span-full"}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certificates.map((cert, index) => (
+              <div
+                key={index}
+                className="custom-bg p-4 rounded-lg border border-accent/30 hover:shadow-glass-sm transition-shadow"
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-48 object-cover rounded-md mb-4"
+                />
+                <h3 className="text-accent font-semibold text-lg">
+                  {cert.title}
+                </h3>
+                <p className="text-sm text-foreground/70">
+                  Issued by: {cert.platform}
+                </p>
+              </div>
+            ))}
           </div>
         </ItemLayout>
 
