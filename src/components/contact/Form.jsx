@@ -32,7 +32,7 @@ export default function Form() {
     const toastId = toast.loading("Sending your message, please wait...");
 
     toast.info(
-      "Thank you for reaching out! This form is currently in a preview mode. If you'd like to contact me directly, feel free to email me at: jubaihasan88@gmail.com or WhatsApp: +8801784355059.",
+      "Thank you for reaching out! This form is currently in a preview mode. If you'd like to contact me directly, feel free to email me at: jubayerhossan.dev@gmail.com or WhatsApp: +8801784355059.",
       {
         id: toastId,
       }
