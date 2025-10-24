@@ -38,7 +38,7 @@ export default function Contact() {
               aria-label="Email contact"
             >
               ✉️ Email:{" "}
-              <span className="font-medium ml-1">jubaihasan88@gmail.com</span>
+              <span className="font-medium ml-1">jubayerhossan.dev@gmail.com</span>
             </a>
           </div>
         </div>
